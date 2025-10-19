@@ -24,8 +24,8 @@ Aplicação Ruby on Rails para gerenciamento de catálogo de filmes com sistema 
 ## 🛠️ Instalação Local
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/movie-catalog.git
-cd movie-catalog
+git clone https://github.com/TayaneCibely/movie_catalog.git
+cd movie_catalog
 
 # Instale as dependências
 bundle install
@@ -44,8 +44,8 @@ Acesse: http://localhost:3000
 
 ## 🌐 Deploy
 
-Aplicação disponível em: https://seu-app.onrender.com
+Aplicação disponível em: https://movie-catalog-kuej.onrender.com
 
 ## 👤 Autor
 
-Seu Nome - [GitHub](https://github.com/seu-usuario)
+Tayane Rodrigues - [GitHub](https://github.com/TayaneCibely)
