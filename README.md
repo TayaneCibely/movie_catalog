@@ -1,24 +1,51 @@
-# README
+# 🎬 Catálogo de Filmes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicação Ruby on Rails para gerenciamento de catálogo de filmes com sistema de comentários.
 
-Things you may want to cover:
+## 🚀 Tecnologias
 
-* Ruby version
+- Ruby 3.2.2
+- Rails 7.1.2
+- PostgreSQL
+- Devise (autenticação)
+- Kaminari (paginação)
 
-* System dependencies
+## 📋 Funcionalidades
 
-* Configuration
+- ✅ Listagem pública de filmes
+- ✅ Paginação (6 filmes por página)
+- ✅ Detalhes completos dos filmes
+- ✅ Sistema de comentários (anônimos e autenticados)
+- ✅ CRUD completo de filmes
+- ✅ Autenticação de usuários
+- ✅ Recuperação de senha
+- ✅ Autorização (apenas criador edita)
 
-* Database creation
+## 🛠️ Instalação Local
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/movie-catalog.git
+cd movie-catalog
 
-* Database initialization
+# Instale as dependências
+bundle install
 
-* How to run the test suite
+# Configure o banco de dados
+rails db:create db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+# (Opcional) Popule com dados de exemplo
+rails db:seed
 
-* Deployment instructions
+# Inicie o servidor
+rails server
+```
 
-* ...
+Acesse: http://localhost:3000
+
+## 🌐 Deploy
+
+Aplicação disponível em: https://seu-app.onrender.com
+
+## 👤 Autor
+
+Seu Nome - [GitHub](https://github.com/seu-usuario)

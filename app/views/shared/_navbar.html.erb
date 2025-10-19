@@ -1,0 +1,17 @@
+<!-- app/views/shared/_navbar.html.erb -->
+<nav class="navbar">
+  <div class="container">
+    <%= link_to "🎬 Catálogo de Filmes", root_path, class: "navbar-brand" %>
+
+    <div class="navbar-menu">
+      <% if user_signed_in? %>
+        <%= link_to "Novo Filme", new_movie_path, class: "btn btn-primary" %>
+        <%= link_to "Meu Perfil", edit_user_registration_path, class: "btn" %>
+        <%= button_to "Sair", destroy_user_session_path, method: :delete, class: "btn" %>
+      <% else %>
+        <%= link_to "Entrar", new_user_session_path, class: "btn" %>
+        <%= link_to "Cadastrar", new_user_registration_path, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</nav>

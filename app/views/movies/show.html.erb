@@ -1,0 +1,26 @@
+<!-- app/views/movies/show.html.erb -->
+<div class="movie-detail">
+  <div class="movie-header">
+    <h1><%= @movie.title %></h1>
+    <p class="movie-meta">
+      <%= @movie.year %> • <%= @movie.duration %> min • Dir: <%= @movie.director %>
+    </p>
+  </div>
+
+  <div class="movie-synopsis">
+    <h3>Sinopse</h3>
+    <p><%= @movie.synopsis %></p>
+  </div>
+
+  <div class="movie-comments">
+    <h3>Comentários (<%= @comments.count %>)</h3>
+
+    <%= render 'comments/form', movie: @movie, comment: @comment %>
+
+    <div class="comments-list">
+      <%= render @comments %>
+    </div>
+  </div>
+
+  <%= link_to "← Voltar", movies_path, class: "btn" %>
+</div>

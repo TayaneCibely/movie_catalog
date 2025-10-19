@@ -78,3 +78,7 @@ group :test do
   gem "selenium-webdriver"
   gem "shoulda-matchers"
 end
+
+group :production do
+  gem 'rack-timeout'
+end
