@@ -1,0 +1,41 @@
+# PostgreSQL. Versions 9.3 and up are supported.
+#
+# Install the pg driver:
+#   gem install pg
+# On macOS with Homebrew:
+#   gem install pg -- --with-pg-config=/usr/local/bin/pg_config
+# On Windows:
+#   gem install pg
+#       Choose the win32 build.
+#       Install PostgreSQL and put its /bin directory on your path.
+#
+# Configure Using Gemfile
+# gem "pg"
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: postgres
+  port: 5432
+
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: movie_catalog_development
+  username: postgres
+  password: postgres
+
+test:
+  <<: *default
+  database: movie_catalog_test
+#
+#   production:
+#     url: <%= ENV["MY_APP_DATABASE_URL"] %>
+
+production:
+  <<: *default
+  database: movie_catalog_production
+  username: movie_catalog
+  password: <%= ENV["MOVIE_CATALOG_DATABASE_PASSWORD"] %>
